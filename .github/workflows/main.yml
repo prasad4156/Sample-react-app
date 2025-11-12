@@ -31,7 +31,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy to S3
-        uses: aws-actions/s3-sync@v3
+        uses: aws-actions/s3-sync@v1
         with:
           bucket: ${{ secrets.S3_BUCKET_NAME }}
           local-path: ./build
