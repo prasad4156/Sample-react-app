@@ -32,4 +32,4 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }} --delete
-            # If using a different build output folder, adjust './build' accordingly
+            # If using a different build output folder, adjust './build' accordingly  
